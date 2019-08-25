@@ -58,10 +58,8 @@ isWinner=()=>{
     if(checkbox(1,2,3,x) || checkbox(4,5,6,x) || checkbox(7,8,9,x) || checkbox(1,4,7,x) || checkbox(2,5,8,x) || checkbox(3,6,9,x) || checkbox(1,5,9,x) || checkbox(7,5,3,x)){
         
         d.innerHTML='Player '+x+' is Won!!!'
+    reSet()
 
-        for(let i=1;i<=9;i++){
-            document.querySelector('.r'+i).innerHTML=''
-        }
         throw `The End`
     }
 
@@ -72,8 +70,18 @@ isWinner=()=>{
    getBox(7)!="" && getBox(8)!="" && getBox(9)!=""){
 
     d.innerHTML= `It's Tie!!!`
+        reSet()
+
        throw `It's Tie!!!`
    }
     }
    
+}
+
+reSet=()=>{
+    
+        for(let i=1;i<=9;i++){
+            document.querySelector('.r'+i).innerHTML=''
+        }
+    
 }
