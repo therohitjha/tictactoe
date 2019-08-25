@@ -1,0 +1,51 @@
+body, html {
+  height: 100%;
+  background: teal;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  text-align: center;
+}
+
+.container {
+  margin-bottom: 200px;
+}
+
+.info {
+  margin: 2em;
+}
+
+.play {
+  font-size: 50px;
+  color: red;
+}
+
+.player {
+  font-size: 25px;
+  color: white;
+}
+
+td div {
+  width: 100px;
+  height: 100px;
+  font-size: 25px;
+  background: whitesmoke;
+  color: teal;
+  border-radius: 10px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+/*# sourceMappingURL=index.css.map */
